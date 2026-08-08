@@ -1,0 +1,37 @@
+{
+  "name": "genpark-realtime-voice-cloning-emotion-expressive-tts-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Real-time zero-shot voice cloning, emotional expression & neural TTS audio generator.",
+  "author": "genpark",
+  "category": "media",
+  "tags": [
+    "voice-cloning",
+    "expressive-tts",
+    "neural-speech",
+    "realtime-audio"
+  ],
+  "inputs": {
+    "text": {
+      "type": "string"
+    },
+    "voice_sample_audio": {
+      "type": "string"
+    },
+    "emotion_tag": {
+      "type": "string"
+    }
+  },
+  "outputs": {
+    "generated_audio_url": {
+      "type": "string"
+    },
+    "sample_rate_hz": {
+      "type": "integer"
+    },
+    "audio_duration_sec": {
+      "type": "number"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
